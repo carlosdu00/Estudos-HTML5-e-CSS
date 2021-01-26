@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Esse site se adapta ao tamanho da sua tela</p>
+    <picture>
+        <source media="(max-width: 1000px)" srcset="imagens/6ilw8hyjb8k31_m.png" type="image/png">
+        
+        <img src="imagens/6ilw8hyjb8k31_gg.png" alt="foto-g">
+    </picture>
+
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto-g">
+
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+
+    <audio preload="metadata" controls>
+        <source src="midia/What_You_Know__Religion_Remix_.ogg" type="audio/ogg">
+        <source src="midia/What_You_Know__Religion_Remix_.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
